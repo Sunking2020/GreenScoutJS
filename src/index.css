@@ -3,7 +3,31 @@ html {
 }
 
 :root {
+  /* --font-sans:
+    "Helvetica Neue", Helvetica, Arial, "Arimo", "Liberation Sans", sans-serif;
+  font-family: var(--font-sans); */
   --background-color: #3c3c3c;
+  --background-grid-color: transparent;
+  --element-grid-color: transparent !important;
+  --background-grid-size: 30px;
+
+  --bg-grid-pattern:
+    linear-gradient(
+      to right,
+      var(--background-grid-color) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--background-grid-color) 1px,
+      transparent 1px
+    );
+
+  --element-grid-pattern:
+    linear-gradient(to right, var(--element-grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--element-grid-color) 1px, transparent 1px);
+
+  --accent-color-non-gradient: #3aea3a;
   --accent-color: linear-gradient(0deg, #3aea3a 0%, #59eb5a 100%);
   --accent-color2: linear-gradient(0deg, #3aea3a 0%, #59eb5a 100%);
   --accent-color3: linear-gradient(0deg, #3db43d 0%, #43c343 100%);

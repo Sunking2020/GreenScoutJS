@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   background: var(--background-color);
+  background-image: var(--bg-grid-pattern);
+  background-size: var(--background-grid-size) var(--background-grid-size);
 }
 
 #homeBody > * {
