@@ -127,7 +127,15 @@
   margin-top: 5.7vh;
   margin-bottom: 4.4vh;
   background: var(--accent-color3);
-  border: 1px solid var(--accent-color3);
+  background-image: if(
+    style(--is-grid: true): var(--element-grid-pattern) ;
+      else: var(--accent-color3)
+  );
+  background-size: if(
+    style(--is-grid: true): var(--background-grid-size)
+      var(--background-grid-size) ; else: 100% 100%
+  );
+  border: 1px solid var(--accent-color4);
   border-radius: var(--border-radius);
   box-shadow: 0px 4px 5px var(--drop-shadow-color);
   color: var(--font-color);
@@ -140,6 +148,7 @@
 
 #loginButton:hover {
   background: var(--accent-color2);
+  color: rgb(3, 19, 10);
 }
 
 #loginButton:disabled {
@@ -152,7 +161,15 @@
   height: calc(var(--login-button-height) * 1.5);
   margin-bottom: 4.4vh;
   background: var(--accent-color3);
-  border: 1px solid var(--accent-color3);
+  background-image: if(
+    style(--is-grid: true): var(--element-grid-pattern) ;
+      else: var(--accent-color3)
+  );
+  background-size: if(
+    style(--is-grid: true): var(--background-grid-size)
+      var(--background-grid-size) ; else: 100% 100%
+  );
+  border: 1px solid var(--accent-color4);
   border-radius: var(--border-radius);
   box-shadow: 0px 4px 5px var(--drop-shadow-color);
   color: var(--font-color);
@@ -165,4 +182,5 @@
 
 #guestButton:hover {
   background: var(--accent-color2);
+  color: var(--font-color-hover);
 }

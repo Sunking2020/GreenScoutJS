@@ -1,5 +1,5 @@
 .collapsibleDropdown {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color-faded);
   border-radius: var(--border-radius);
   width: calc(100% - var(--matchform-child-width-to-subtract));
   margin-left: var(--matchform-child-margin-side);
