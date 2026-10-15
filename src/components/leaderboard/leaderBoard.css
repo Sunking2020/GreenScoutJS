@@ -3,7 +3,7 @@
   height: var(--page-height);
   margin: 0;
   overflow: hidden;
-  font-family: sans-serif;
+  font-family: var(--font-sans);
   font-size: var(--font-size-small);
   color: var(--font-color-prompt-title);
   background: var(--background-color);

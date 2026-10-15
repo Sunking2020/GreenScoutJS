@@ -8,10 +8,7 @@ html {
   --is-grid: false;
 
   /* Color Variables */
-
-  /* --font-sans:
-    "Helvetica Neue", Helvetica, Arial, "Arimo", "Liberation Sans", sans-serif;
-  font-family: var(--font-sans); */
+  --font-sans: Arial, Helvetica, sans-serif;
   --background-color: #3c3c3c;
   --background-grid-color: transparent;
   --element-grid-color: transparent;
