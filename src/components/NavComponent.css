@@ -51,10 +51,9 @@ body {
 }
 
 .hamburger {
-  margin-top: calc(0.125 * var(--navbar-height));
-  margin-left: calc(0.1 * var(--navbar-height));
+  margin-top: calc(0.0625 * var(--navbar-height));
   height: calc(0.8 * var(--navbar-height));
-  width: calc(0.8 * var(--navbar-height));
+  width: calc(1.7 * var(--navbar-height));
   background: if(
     style(--eye-replace-hamburger: false): var(--hamburger-color) ;
       else: transparent;
@@ -74,10 +73,9 @@ body {
   -webkit-mask-size: contain;
   mask-size: contain;
   background-image: if(
-    style(--eye-replace-hamburger: true): url("../assets/greenlogo.png") ;
+    style(--eye-replace-hamburger: true): url("../assets/greenlogo.svg") ;
   );
   cursor: pointer;
-  padding: var(--navbar-hamburger-padding);
   position: fixed;
   top: var(--navbar-hamburger-top-distance);
   z-index: 1001;
@@ -176,7 +174,7 @@ body {
 }
 
 .side-nav-top > :first-child {
-  margin-top: var(--navbar-height);
+  margin-top: calc(1.4 * var(--navbar-height));
 }
 
 .side-nav-bottom {
@@ -251,7 +249,7 @@ body {
 #nav-toggle:checked ~ .hamburger {
   background: if(
     style(--eye-replace-hamburger: false): var(--hamburger-color-checked) ;
-      else: url("../assets/greenlogo.png") ;
+      else: url("../assets/greenlogo.svg") ;
   );
   background-position: 0.5vh 0.5vh;
   background-size: 95% 95%;
@@ -261,7 +259,7 @@ body {
 #nav-toggle:not(:checked) ~ .hamburger.animated-accent {
   background: if(
     style(--eye-replace-hamburger: false): var(--hamburger-color) ;
-      else: url("../assets/greenlogo.png") ;
+      else: url("../assets/greenlogo.svg") ;
   );
   background-position: 0.5vh 0.5vh;
   background-size: 100% 100%;

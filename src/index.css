@@ -85,7 +85,7 @@ html {
 
   /* Navbar Sizing Variables */
   --sidenav-width: 75vw;
-  --navbar-height: clamp(3rem, 8vh, 4.5rem);
+  --navbar-height: clamp(5rem, 10vh, 6.5rem);
   --sidenav-usertile-height: 0%;
   --sidenav-usertile-width: 15vh;
   --sidenav-section-height: calc((100% - var(--sidenav-usertile-height)) / 2);
