@@ -1,0 +1,107 @@
+.textcheck {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: var(--font-color-prompt-title);
+  font-size: var(--font-size-small);
+  line-height: 1.3;
+  flex: 1;
+  min-width: 0;
+}
+
+.text:hover {
+  cursor: default;
+}
+
+.child.divcheck {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: var(--check-div-height);
+  width: calc(100% - var(--matchform-child-width-to-subtract));
+  margin-left: var(--matchform-child-margin-side);
+  gap: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  position: relative;
+}
+
+.divcheck:focus {
+  outline: none;
+}
+
+.check {
+  height: var(--check-size);
+  width: var(--check-size);
+  flex-shrink: 0;
+}
+
+.checkcontainer {
+  display: block;
+  flex-shrink: 0;
+  padding-left: var(--check-container-padding-left);
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-width: calc(var(--check-container-padding-left) + var(--check-size));
+  min-height: var(--check-size);
+}
+
+.checkcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+  left: auto;
+  height: var(--check-size);
+  width: var(--check-size);
+  background: var(--checkbox-default-color);
+  border-radius: 3px;
+}
+
+.checkcontainer:hover input ~ .checkmark {
+  background: var(--checkbox-hover-color);
+}
+
+.checkcontainer input:checked ~ .checkmark {
+  background: var(--check-background-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkcontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkcontainer .checkmark:after {
+  left: var(--check-mark-after-left);
+  top: var(--check-mark-after-top);
+  width: var(--check-mark-after-size);
+  height: var(--check-mark-after-size);
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#autotext {
+  flex: 1;
+  min-width: 0;
+  width: var(--check-auto-text-width);
+}

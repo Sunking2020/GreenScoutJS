@@ -1,0 +1,86 @@
+#sideButtonTrigger {
+  flex-shrink: 0;
+  position: relative;
+  top: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 5px var(--drop-shadow-color);
+  color: var(--font-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-cycle);
+  outline: none;
+  width: var(--trigger-size);
+  height: var(--trigger-size);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  margin-top: clamp(0.3rem, 1.5vh, 0.8rem);
+  margin-bottom: 0;
+}
+
+#sideButtonTrigger.active {
+  background: var(--error-color);
+  border-color: var(--error-color);
+}
+
+#sideButtonTrigger.inactive {
+  background: var(--accent-color3);
+  border-color: var(--accent-color3);
+}
+
+#stopbuttonimg {
+  height: var(--trigger-stop-image-height);
+  width: 100%;
+  background-size: var(--trigger-stop-image-background-size);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.act {
+  background: var(--font-color);
+  -webkit-mask-image: url("../../../assets/square-solid-full.svg");
+  mask-image: url("../../../assets/square-solid-full.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.inact {
+  background: var(--font-color);
+  -webkit-mask-image: url("../../../assets/stopwatch.svg");
+  mask-image: url("../../../assets/stopwatch.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+#resetbutton {
+  background: var(--accent-color3);
+  border: 1px solid var(--accent-color3);
+  border-radius: var(--border-radius);
+  color: var(--font-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-small);
+  outline: none;
+  width: 100%;
+  height: var(--trigger-reset-height);
+  min-height: 2rem;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+#resetbutton:hover {
+  background: var(--accent-color2);
+}

@@ -1,0 +1,247 @@
+html {
+  scrollbar-color: var(--font-color-prompt-title) var(--background-color);
+}
+
+:root {
+  --background-color: #3c3c3c;
+  --accent-color: linear-gradient(0deg, #3aea3a 0%, #59eb5a 100%);
+  --accent-color2: linear-gradient(0deg, #3aea3a 0%, #59eb5a 100%);
+  --accent-color3: linear-gradient(0deg, #3db43d 0%, #43c343 100%);
+
+  --hamburger-color: var(--font-color);
+  --hamburger-color-checked: var(--font-color);
+
+  --matchform-sectionbox-background-color: rgba(0, 0, 0, 0.1);
+
+  --blue-color: #9bcbfb;
+  --error-color: var(--disabled-color);
+  --disabled-color: #717172;
+
+  --font-color: black;
+  --font-color-prompt-title: white;
+  --font-color-prompt-title-faded: hsl(
+    from var(--font-color-prompt-title) h 0% 70%
+  );
+  --font-color-header: white;
+
+  --drop-shadow-color: #626263;
+  --sidenav-hover-color: linear-gradient(0deg, #3aea3a 0%, #59eb5a 100%);
+  --faded-text-color: #5f6167;
+
+  --kelly-green: #4cbb17;
+  --error-message-color: var(--disabled-color);
+  --check-background-color: #4cbb17;
+  --checkbox-default-color: #eee;
+  --checkbox-hover-color: #ccc;
+  --border-color-faded: #d9d9db;
+  --border-color-active: #4cbb17;
+  --sidenav-button-color: #dfdfdf;
+
+  /* General Sizing Variables */
+  --font-size-large: 3vh;
+  --font-size-small: 2.5vh;
+  --font-size-cycle: clamp(0.7rem, 1.8vh, 0.95rem);
+  --font-weight: 1;
+  --border-radius: 1rem;
+  --page-height: 100dvh;
+  --page-width: 100vw;
+  --content-height: calc(var(--page-height) - var(--navbar-height));
+  --content-width: var(--page-width);
+  --element-height: clamp(3.8rem, 20.2vh, 10rem);
+
+  /* Navbar Sizing Variables */
+  --sidenav-width: 75vw;
+  --navbar-height: clamp(3rem, 8vh, 4.5rem);
+  --sidenav-usertile-height: 0%;
+  --sidenav-usertile-width: 15vh;
+  --sidenav-section-height: calc((100% - var(--sidenav-usertile-height)) / 2);
+  --navbar-hamburger-padding: 15px;
+  --navbar-hamburger-top-distance: -6px;
+  --navbar-text-padding-top: 5px;
+  --sidenav-usertile-margin-bottom: 3vw;
+  --sidenav-userimage-size: clamp(1.5rem, 3vw, 2.5rem);
+  --sidenav-usertext-h1-margin-top: 1.7vh;
+  --sidenav-usertext-p-margin-top: -4.3vh;
+  --sidenav-usertext-p-margin-left: 0.2vw;
+  --sidenav-padding-top: 60px;
+
+  /* Login Sizing Variables */
+  --login-h1-height: 3vh;
+  --login-h1-margin-top: 4vh;
+  --login-error-message-margin: 10px 0;
+  --login-element-width: 50rem;
+  --login-element-height: clamp(4.8rem, 6.2vh, 6.6rem);
+  --login-box-margin-top: 5vh;
+  --login-box-margin-bottom: 1.5vh;
+  --login-box-padding-left: calc(var(--login-box-background-size) + 1vh);
+  --login-box-background-size: 3vh;
+  --login-box-background-position: 5px 1.2vh;
+  --login-button-height: clamp(2.5rem, 6vh, 4rem);
+
+  /* Match Form Sizing Variables */
+  --matchform-sectionbox-margin-vertical: clamp(1.5rem, 5.5vh, 2rem);
+  --matchform-sectionbox-padding-top: clamp(1.5rem, 7.5vh, 2rem);
+  --matchform-side-panel-width: clamp(4rem, 8vh, 5.5rem);
+  --matchform-grid-template: 1fr var(--matchform-side-panel-width);
+  --matchform-child-margin-side: 1vw;
+  --matchform-child-width-to-subtract: calc(
+    var(--matchform-child-margin-side) * 2
+  );
+  --matchform-element-height: var(--element-height);
+  --matchform-matchteam-margin-top: clamp(0.5rem, 1.5vh, 1rem);
+  --matchform-header-padding-top: 5px;
+  --matchform-header-end-margin-top: clamp(2rem, 8vh, 5rem);
+  --matchform-notes-height: 35vh;
+  --matchform-cycle-container-height: clamp(16rem, 40vh, 28rem);
+  --matchform-cycle-item-height: clamp(4rem, 9vh, 6rem);
+  --matchform-cycle-item-margin-bottom: clamp(0.3rem, 1vw, 0.6rem);
+  --matchform-cycle-item-image-height: clamp(1.8rem, 4vh, 2.6rem);
+  --matchform-cycle-item-image-width: clamp(1.8rem, 4vh, 2.6rem);
+  --matchform-cycle-delete-height: 30%;
+  --matchform-cycle-delete-width: 10%;
+  --matchform-cycle-text-padding-top: 5%;
+  --matchform-cycle-text-padding-left: 5%;
+  --matchform-cycle-text-width: 25;
+  --matchform-bottomspace-height: clamp(4rem, 15vh, 10rem);
+  --matchform-bottomspace-max-height: 80px;
+  --matchform-notes-padding: 1em;
+
+  /* Match Form Checkbox Sizing Variables */
+  --check-text-height: 30px;
+  --check-padding-top: 1vh;
+  --check-div-height: clamp(2.4rem, 6vh, 3.5rem);
+  --check-div-margin: 5vh;
+  --check-size: clamp(1.1rem, 2.5vh, 1.6rem);
+  --check-container-padding-left: 35px;
+  --check-container-margin-bottom: 12px;
+  --check-mark-left: 1vw;
+  --check-mark-after-left: 9px;
+  --check-mark-after-top: 5px;
+  --check-mark-after-size: clamp(0.5rem, 1.2vh, 0.8rem);
+  --check-special-margin-left: 7.5vw;
+  --check-auto-text-padding-top: 1vh;
+  --check-auto-text-width: 80vw;
+
+  /* Match Form Counter Sizing Variables */
+  --counter-text-padding-top: 5px;
+  --counter-text-height: 30px;
+  --counter-text-margin-bottom: 5vh;
+  --counter-child-margin-vertical: 3vh;
+  --counter-button-height: clamp(2.8rem, 5.2vh, 3.4rem);
+  --counter-add-width: 28%;
+  --counter-subtract-width: 20%;
+  --counter-button-margin-left: 1vw;
+
+  /* Match Form Slider Sizing Variables */
+  --slider-container-width: 55%;
+  --slider-container-margin-bottom: clamp(0.4rem, 3vh, 1.2rem);
+
+  /* Match Form Accuracy Slider Sizing Variables */
+  --matchform-acclabel-width: clamp(2.8rem, 10vh, 5rem);
+  --matchform-acclabel-height: clamp(1rem, 3vh, 2rem);
+  --matchform-accslider-width: 70%;
+  --matchform-accslider-height: 2vh;
+  --matchform-accslider-margin-right: 10%;
+  --matchform-accslider-thumb-size: clamp(1.6rem, 5vw, 2.2rem);
+
+  /* Match Form Collapsible Dropdown Sizing Variables */
+  --collapsible-open-max-height: 9999px;
+  --collapsible-padding: 12px 16px;
+
+  /* Match Form Dropdown Sizing Variables */
+  --dropdown-margin-top: 3vh;
+  --dropdown-padding-bottom: 0.5vh;
+  --dropdown-height: clamp(4rem, 5.2vh, 10rem);
+  --dropdown-width: clamp(8rem, 12vh, 15rem);
+  --dropdown-text-padding-top: 5px;
+  --dropdown-text-height: 30px;
+  --dropdown-driverstation-margin-top: 1vh;
+  --dropdown-dtext-height: 3.1vh;
+  --dropdown-dtext-width: 70vw;
+  --dropdown-collect-container-margin-top: 3%;
+  --dropdown-dtext-collect-width: 70vw;
+  --dropdown-collect-margin-top: 0;
+  --dropdown-collect-padding-bottom: 0.5vh;
+  --dropdown-park-text-padding-top: 4%;
+
+  /* Match Form Trigger Sizing Variables */
+  --trigger-margin-top: 5.7vh;
+  --trigger-margin-bottom: 4.4vh;
+  --trigger-size: clamp(3rem, 6.5vh, 4.5rem);
+  --trigger-stop-image-height: 2vh;
+  --trigger-stop-image-background-size: 1.7vh 1.7vh;
+  --trigger-stop-image-background-position: 2vh 0vh;
+  --trigger-reset-height: clamp(2.2rem, 8vh, 4.5rem);
+
+  /* Match Form Submit/Replay Sizing Variables */
+  --submitreplay-div-height: var(--matchform-element-height);
+  --submitreplay-div-margin-bottom: 1vh;
+  --submitreplay-button-margin-top: 5.7vh;
+  --submitreplay-button-margin-bottom: 4.4vh;
+  --submitreplay-text-margin-top: -1vh;
+  --submitreplay-label-margin-top: 2vh;
+  --submit-image-margin-top: -3.5vh;
+  --submit-image-size: clamp(2rem, 4.8vh, 3.2rem);
+
+  /* General Cycles Sizing Variables */
+  --cycle-margin-top: 5.7vh;
+  --cycle-margin-bottom: 4.4vh;
+  --cycle-size: clamp(3rem, 6.5vh, 4.5rem);
+  --cycle-top: 4vh;
+  --cycle-image-height: 2vh;
+  --cycle-image-background-size: 1.7vh 1.7vh;
+  --cycle-image-background-position: 2vh 0vh;
+
+  /* Score Cycle Sizing Variables */
+  --score-top: 13vh;
+  --score-image-height: clamp(1.2rem, 3vh, 2rem);
+
+  /* Shuttle Cycle Sizing Variables */
+  --shuttle-top: 22vh;
+
+  /* Hub Switch Cycle Sizing Variables */
+  --hubSwitch-top: 31vh;
+
+  /* Home Page Sizing Variables */
+  --new-matchpit-button-height: clamp(3rem, 8vh, 5rem);
+  --new-matchpit-button-width: clamp(14rem, 50vw, 22rem);
+  --home-text-padding-top: 5px;
+  --home-assigned-h-padding-top: 10px;
+  --home-refresh-container-bottom: -14px;
+  --home-refresh-container-right: 17px;
+  --home-refresh-button-margin-top: 5.7vh;
+  --home-refresh-button-margin-bottom: 4.4vh;
+  --refresh-button-size: clamp(3.5rem, 7.9vh, 5rem);
+
+  /* Leader Board Sizing Variables */
+  --leader-board-element-height: clamp(2.2rem, 5vh, 3.2rem);
+
+  /* Settings Sizing Variables */
+  --settings-element-width: 80%;
+  --settings-element-height: calc(var(--font-size-large) * 2);
+  --settings-element-spacing: calc(var(--font-size-small) / 2);
+  --settings-debug-image-offset: 2vh;
+  --settings-themedrop-padding-top: 5px;
+  --settings-themedrop-height: 30px;
+  --settings-themedrop-text-width: 70vw;
+  --settings-themedrop-margin-top: 10%;
+  --settings-themedrop-padding-bottom: 0.5vh;
+  --debug-element-width: 90%;
+}
+
+:root[data-offline="1"] .animated-offline {
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 100, 100),
+    rgb(255, 80, 80),
+    rgb(255, 100, 100)
+  ) !important;
+  background-size: 400% 100% !important;
+  animation: loop 5s reverse linear infinite !important;
+  border-color: transparent !important;
+}
+
+:root[data-offline="0"] .animated-offline {
+  background: transparent;
+  border-color: transparent !important;
+}

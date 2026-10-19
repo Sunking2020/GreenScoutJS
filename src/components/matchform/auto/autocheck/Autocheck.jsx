@@ -1,0 +1,21 @@
+import "./Autocheck.css";
+
+function Autocheck({ children, checked, onChange, name }) {
+  return (
+    <div className="child divcheck">
+      <p className="textcheck animated-text">{children}</p>
+      <label className="checkcontainer">
+        <input
+          className="check"
+          type="checkbox"
+          checked={checked}
+          onChange={onChange}
+          name={name}
+        />
+        <span className="checkmark"></span>
+      </label>
+    </div>
+  );
+}
+
+export default Autocheck;
